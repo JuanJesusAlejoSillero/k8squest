@@ -1,6 +1,6 @@
 🧭 Direction Hint:
 
-The init container is trying to lookup "nonexistent-service" using `nslookup`, but that service doesn't exist. The container will loop forever waiting for it.
+The init container is trying to lookup "backend-service.k8squest.svc.cluster.local" using `nslookup`, but that service doesn't exist. The container will loop forever waiting for it.
 
 Init containers must complete successfully before the main container starts. This one never will!
 
